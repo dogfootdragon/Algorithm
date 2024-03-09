@@ -18,6 +18,7 @@ function solution(s) {
     return result.slice(0,-1);
 }
 
+
 //완주하지 못한 선수
 function solution(participant, completion) {
     //마라톤에 참여한 선수 배열과 완주한 선수 배열의 길이는 1 차이난다
@@ -54,6 +55,7 @@ function solution(participant, completion) {
     return answer;
 }
 
+
 //소수 찾기
 function solution(n) {
     var answer = [];
@@ -72,4 +74,36 @@ function solution(n) {
     answer = arr.filter((el)=>el!==0); //0 삭제
     answer.shift(); //1 삭제
     return answer.length;
+}
+
+
+//시저 암호
+function solution(s, n) {
+    var answer = '';
+    //각 문자열마다 n씩 밀어줘야함
+    //소문자는 소문자로, 대문자는 대문자로 출력
+    //공백(sp)도 아스키코드가 있다 > 32
+    for(let i=0; i<s.length; i++){
+        let sAskii = s[i].charCodeAt();
+        if(sAskii == 32){//공백처리
+            answer += ' ';
+            continue;
+        }
+
+        if(sAskii >= 65 && sAskii <= 90){ //대문자일때
+            if(sAskii+n > 90){//Z를 넘어가면 -26
+                answer += String.fromCharCode(sAskii+n-26);
+            } else {
+                answer += String.fromCharCode(sAskii + n);
+            }
+        } else if(sAskii >=97 && sAskii <= 122){ //소문자일때
+            console.log(sAskii+n)
+            if(sAskii+n > 122){//z를 넘어가면 -26
+                answer += String.fromCharCode(sAskii+n-26);
+            } else {
+                answer += String.fromCharCode(sAskii + n);
+            }
+        }
+    }
+    return answer;
 }

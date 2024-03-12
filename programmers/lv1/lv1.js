@@ -146,3 +146,27 @@ function solution(participant, completion) {
 
     return answer;
 }
+
+
+// 최대공약수와 최소공배수
+function solution(n, m) {
+    var answer = [];
+    //최대공약수를 구하는법: 두 수중 큰 수를 작은수로 나누고 a%b = ? 나머지가 0이면 b가 최대공약수
+    //나머지가 0이 아니라면 a=b, b=r(나머지) ... < 반복. b가 0이 되면 종료되고 a가 최대공약수가 된다.
+    //최소공배수를 구하는법 최소공배수=a*b/최대공약수
+
+    let a = Math.max(n,m);
+    let b = Math.min(n,m);
+
+    let recursive = (a,b) => {
+        if(b==0){
+            return answer[0] = a;
+        }
+        let r = a % b;
+        return recursive(b,r);
+    }
+    recursive(a,b);
+    answer[1] = a*b/answer[0];
+
+    return answer;
+}

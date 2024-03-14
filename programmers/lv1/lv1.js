@@ -154,3 +154,21 @@ function solution(num) {
     recursive(num);
     return count;
 }
+
+
+// 예산
+function solution(d, budget) {
+    var answer = 0;
+    // [1,3,2,5,4] 9까지가능 최대지원개수는:?
+    let dArr = d.sort((a,b)=>a-b);
+
+    for(let i=0; i<d.length; i++){
+        budget -= d[i];
+        if(budget<0){
+            break;
+        }
+        answer++;
+    }
+
+    return answer;
+}

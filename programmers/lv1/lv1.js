@@ -172,3 +172,24 @@ function solution(d, budget) {
 
     return answer;
 }
+
+
+// 문자열 내 마음대로 정렬하기
+function solution(strings, n) {
+    var answer = [];
+
+    //1.인덱스 n의 값이 같은 경우 사전순으로 정렬 -> .sort() 함수로 알파벳순 정렬
+    //2.인덱스 n의 값끼리 비교 후 next값보다 prev값이 더 클 경우 -1리턴
+    answer = strings.sort();
+
+    answer.sort((a,b) => {
+        if(a[n]>b[n]){
+            return 1;
+        }   else if(a[n]<b[n]) {
+            return -1;
+        }   else {
+            return 0;
+        }
+    });
+    return answer;
+}

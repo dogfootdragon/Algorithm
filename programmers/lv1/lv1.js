@@ -193,3 +193,21 @@ function solution(strings, n) {
     });
     return answer;
 }
+
+
+// 나누어 떨어지는 숫자 배열
+function solution(arr, divisor) {
+    var answer = [];
+
+    arr.forEach((el,i) =>{
+        el % divisor ? '' : answer.push(el);
+    })
+
+    answer.length == 0 ? answer.push(-1) : '';
+    //유니코드 순서에 유의하며 sort
+    answer.sort(function(a,b){
+        return a - b;
+    })
+
+    return answer;
+}

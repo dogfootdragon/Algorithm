@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef218ef7-bb60-431c-8184-20277881a4fe" name="Changes" comment="lv1 예산" />
+    <list default="true" id="ef218ef7-bb60-431c-8184-20277881a4fe" name="Changes" comment="lv1 문자열 내 마음대로 정렬하기" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +57,7 @@
       <workItem from="1710248851303" duration="79000" />
       <workItem from="1710336604807" duration="156000" />
       <workItem from="1710418806903" duration="84000" />
+      <workItem from="1710511944833" duration="57000" />
     </task>
     <task id="LOCAL-00001" summary="lv1 최대공약수와 최소공배수">
       <created>1710248909192</created>
@@ -79,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710418882563</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lv1 문자열 내 마음대로 정렬하기">
+      <created>1710511993084</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710511993084</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +109,7 @@
     <MESSAGE value="lv1 최대공약수와 최소공배수" />
     <MESSAGE value="lv1 콜라스 추측" />
     <MESSAGE value="lv1 예산" />
-    <option name="LAST_COMMIT_MESSAGE" value="lv1 예산" />
+    <MESSAGE value="lv1 문자열 내 마음대로 정렬하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="lv1 문자열 내 마음대로 정렬하기" />
   </component>
 </project>

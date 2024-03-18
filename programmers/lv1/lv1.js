@@ -211,3 +211,44 @@ function solution(arr, divisor) {
 
     return answer;
 }
+
+
+// 같은 숫자는 싫어
+function solution(arr) {
+    var answer = [];
+
+    arr.forEach((el)=>{
+        answer.at(-1) == el ? '' : answer.push(el);
+    })
+
+    return answer;
+}
+
+
+// 2016년
+/* 첫 풀이 (테스트코드 2개 불합격)*/
+function solution(a, b) {
+    var answer = '';
+
+    let daysArr = ['SAT','SUN','MON','TUE','WED','THU','FRI'];
+
+    let today = new Date(`2016-${a}-${b}`);
+    let startDay = new Date(`2016-01-01`);
+
+    let diff = today - startDay;
+    let diffDay = Math.floor(diff / (1000 * 60 * 60 * 24));
+    answer = daysArr[diffDay%7];
+
+    return answer;
+}
+
+/* 두 번째 풀이 .getDay() 메소드 사용 */
+function solution(a, b) {
+    // 문제에서 요일의 이름을 일요일부터 알려준 이유?
+    let daysArr = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
+
+    // .getDay() 함수를 사용하면 해당 날짜의 요일을 리턴한다 (일요일부터 0,1,2,3...)
+    let today = new Date(`2016-${a}-${b}`).getDay();
+
+    return daysArr[today];
+}

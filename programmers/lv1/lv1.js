@@ -252,3 +252,17 @@ function solution(a, b) {
 
     return daysArr[today];
 }
+
+
+// 문자열 다루기 기본
+function solution(s) {
+    //문자열 길이 체크 (4~6)
+    //숫자로만 구성되어있는지 체크
+    let sLength = s.length;
+
+    if(sLength == 4 || sLength == 6){
+        return s.split('').every(ele=>!isNaN(ele));
+    } else {
+        return false;
+    }
+}

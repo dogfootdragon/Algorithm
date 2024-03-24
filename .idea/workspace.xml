@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef218ef7-bb60-431c-8184-20277881a4fe" name="Changes" comment="lv1 문자열 다루기 기본">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ef218ef7-bb60-431c-8184-20277881a4fe" name="Changes" comment="lv1 행렬의 덧셈" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +63,7 @@
       <workItem from="1710858102685" duration="92000" />
       <workItem from="1711025176624" duration="12000" />
       <workItem from="1711093549262" duration="1000" />
+      <workItem from="1711200082778" duration="121000" />
     </task>
     <task id="LOCAL-00001" summary="lv1 최대공약수와 최소공배수">
       <created>1710248909192</created>
@@ -115,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710858180455</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="lv1 행렬의 덧셈">
+      <created>1711200135930</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711200135930</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +147,7 @@
     <MESSAGE value="lv1 나누어 떨어지는 숫자 배열" />
     <MESSAGE value="lv1 같은 숫자는 싫어, 2016년" />
     <MESSAGE value="lv1 문자열 다루기 기본" />
-    <option name="LAST_COMMIT_MESSAGE" value="lv1 문자열 다루기 기본" />
+    <MESSAGE value="lv1 행렬의 덧셈" />
+    <option name="LAST_COMMIT_MESSAGE" value="lv1 행렬의 덧셈" />
   </component>
 </project>

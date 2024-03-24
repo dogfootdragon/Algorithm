@@ -279,3 +279,19 @@ function solution(arr1, arr2) {
     }
     return answer;
 }
+
+
+// 정수 내림차순으로 배치하기
+function solution(n) {
+    let arr = String(n).split('');
+    var answer = arr.map((v)=>{
+        return Number(v);
+    })
+    return Number(answer.sort().reverse().join('').replace(','));
+}
+
+
+// 정수 제곱근 판별
+function solution(n) {
+    return Number.isInteger(Math.sqrt(n)) ? (Math.sqrt(n)+1)**2 : -1;
+}

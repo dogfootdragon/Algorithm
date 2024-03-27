@@ -295,3 +295,24 @@ function solution(n) {
 function solution(n) {
     return Number.isInteger(Math.sqrt(n)) ? (Math.sqrt(n)+1)**2 : -1;
 }
+
+
+// K번째수
+function solution(array, commands) {
+    var answer = [];
+    commands.forEach((el)=>{
+        let arr = [];
+        let i = el[0]-1;
+        let j = el[1];
+        let k = el[2]-1;
+
+        arr = array.slice(i,j);
+        answer.push(arr.sort((a,b)=>a-b)[k]); // 배열로 리턴하기 위해 push해주고 있다.
+    })
+    return answer;
+}
+/* array자료형으로 return해주는 map을 활용 */
+function solution(array, commands) {
+    let answer = commands.map(([i,j,k])=>array.slice(i-1,j).sort((a,b)=>a-b)[k-1]);
+    return answer;
+}

@@ -316,3 +316,20 @@ function solution(array, commands) {
     let answer = commands.map(([i,j,k])=>array.slice(i-1,j).sort((a,b)=>a-b)[k-1]);
     return answer;
 }
+
+
+// 수박수박수박수박수박수?
+function solution(n) {
+    var answer = '수박';
+    answer = answer.repeat(n/2+1).substring(0,n);
+    return answer;
+}
+
+
+// 제일 작은 수 제거하기
+function solution(arr) {
+    let minNum = Math.min(...arr);
+    arr.splice(arr.indexOf(minNum),1);
+    let answer = arr.length == 0 ? [-1] : arr;
+    return answer;
+}

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef218ef7-bb60-431c-8184-20277881a4fe" name="Changes" comment="lv1 K번째수 (두번째 풀이에서 map활용)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programmers/lv1/lv1.js" beforeDir="false" afterPath="$PROJECT_DIR$/programmers/lv1/lv1.js" afterDir="false" />
-    </list>
+    <list default="true" id="ef218ef7-bb60-431c-8184-20277881a4fe" name="Changes" comment="lv1 수박수박수박수박수박수?, 제일 작은 수 제거하기" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +66,7 @@
       <workItem from="1711200082778" duration="121000" />
       <workItem from="1711286728689" duration="124000" />
       <workItem from="1711544473297" duration="203000" />
-      <workItem from="1711625920260" duration="313000" />
+      <workItem from="1711625920260" duration="363000" />
     </task>
     <task id="LOCAL-00001" summary="lv1 최대공약수와 최소공배수">
       <created>1710248909192</created>
@@ -141,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711544665502</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="lv1 수박수박수박수박수박수?, 제일 작은 수 제거하기">
+      <created>1711626275949</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1711626275949</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +174,7 @@
     <MESSAGE value="lv1 행렬의 덧셈" />
     <MESSAGE value="lv1 정수 내림차순으로 배치하기&#10;    정수 제곱근 판별" />
     <MESSAGE value="lv1 K번째수 (두번째 풀이에서 map활용)" />
-    <option name="LAST_COMMIT_MESSAGE" value="lv1 K번째수 (두번째 풀이에서 map활용)" />
+    <MESSAGE value="lv1 수박수박수박수박수박수?, 제일 작은 수 제거하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="lv1 수박수박수박수박수박수?, 제일 작은 수 제거하기" />
   </component>
 </project>

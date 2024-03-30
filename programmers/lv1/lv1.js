@@ -333,3 +333,23 @@ function solution(arr) {
     let answer = arr.length == 0 ? [-1] : arr;
     return answer;
 }
+
+
+// 가운데 글자 가져오기
+function solution(s) {
+    var answer = '';
+
+    if (s.length % 2 === 0) {
+        const startIndex = (s.length / 2) - 1;
+        const endIndex = ((s.length / 2) - 1) + 2;
+        console.log(startIndex, endIndex);
+        answer = s.slice(startIndex, endIndex);
+    }
+
+    if (s.length % 2 !== 0) {
+        const foundIndex = s.length / 2;
+        answer = s.split("")[foundIndex - 0.5]
+    }
+
+    return answer;
+}

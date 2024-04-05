@@ -353,3 +353,31 @@ function solution(s) {
 
     return answer;
 }
+
+
+// 외톨이 알파벳
+function solution(input_string) {
+    let arr = input_string.split('');
+    let sortArr = [];
+    let answer = new Set();
+
+    arr.forEach((el,idx,arr) => {
+        if(el !== arr[idx-1]) {
+            sortArr.push(el);
+        }
+    });
+    // console.log(answer);
+
+    let set = new Set();
+    sortArr.sort().forEach((el,idx,arr) => {
+        set.add(el);
+        if(set.has(arr[idx+1])){
+            answer.add(el);
+        }
+    });
+
+    let result = [...answer].join('');
+    console.log(result)
+    return result == '' ? result += 'N' : result;
+}
+

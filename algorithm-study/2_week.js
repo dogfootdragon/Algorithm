@@ -35,10 +35,6 @@ function solution(dirs) {
   let x = y = 0; // 좌표값 초기화
   let answer = new Set();
   
-  // *이전 좌표값 초기화*
-  let prevXY = '0,0';
-  let currXY = '0,0';
-  
   dirs.split('').forEach((el) => {
       let xy1 = `${x},${y}`;
       switch (el) {
@@ -57,14 +53,11 @@ function solution(dirs) {
       }
       let xy2 = `${x},${y}`;
       
-      if(xy1 == xy2 || prevXY == xy2 && currXY == xy1){
-          // 움직이지 않았거나, *같은 길을 되돌아갈 경우 추가하지 않는다*
+      if(xy1 == xy2){
+          // 움직이지 않을 경우 추가하지 않는다
       } else {
-          answer.add({[count]:`${xy1}/${xy2}`});
+          answer.add(`${xy1} / ${xy2}`);
       }
-      
-      prevXY = xy1;
-      currXY = xy2;
   });
   
   // 채점 결과 7번까지 정답, 이후 오답처리됨
